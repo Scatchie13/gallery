@@ -1,0 +1,54 @@
+.image {
+	width: 415px;
+	height: 280px;
+}
+
+.imageHover {
+	width: 415px;
+	height: 280px;
+	filter: brightness(0.5);
+}
+
+.gallery {
+	display: flex;
+	width: 415px;
+	height: 350px;
+	position: relative;
+	box-shadow: 0 2px 4px rgba(0, 0, 0);
+}
+
+.header {
+	text-align: center;
+}
+
+.deleteBtn {
+	position: absolute;
+	color: #fff;
+	cursor: pointer;
+	top: 15px;
+	right: 30px;
+}
+
+.checkbox {
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0);
+	vertical-align: middle;
+	border: 2px solid rgb(255, 255, 255);
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	z-index: 1;
+}
+
+.checkbox:checked {
+	background-color: #8bc24b;
+	background-image: url('../../../public/check.svg');
+	background-position: center;
+	border: none;
+}
