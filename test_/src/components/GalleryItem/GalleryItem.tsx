@@ -42,7 +42,6 @@ const GalleryItem = (props: GalleryItemProps) => {
 					checked={cardData.selected}
 					onChange={handleCheckboxChange}
 					color='primary'
-					style={{ display: hovered || cardData.selected ? 'block' : 'block' }}
 				/>
 			)}
 			{
