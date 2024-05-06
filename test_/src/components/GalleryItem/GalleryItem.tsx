@@ -13,13 +13,13 @@ const GalleryItem = (props: GalleryItemProps) => {
 	const { cardData, onSelect, onDelete } = props
 	const [hovered, setHovered] = useState(false)
 
-	const handleMouseEnter = useCallback(() => {
+	const handleMouseEnter = () => {
 		setHovered(true)
-	}, [])
+	}
 
-	const handleMouseLeave = useCallback(() => {
+	const handleMouseLeave = () => {
 		setHovered(false)
-	}, [])
+	}
 
 	const handleCheckboxChange = useCallback(() => {
 		onSelect(cardData)
@@ -41,8 +41,6 @@ const GalleryItem = (props: GalleryItemProps) => {
 					className={styles.checkbox}
 					checked={cardData.selected}
 					onChange={handleCheckboxChange}
-					color='primary'
-					style={{ display: hovered || cardData.selected ? 'block' : 'block' }}
 				/>
 			)}
 			{
